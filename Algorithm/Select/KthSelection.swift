@@ -9,6 +9,7 @@ import Foundation
 
 class KthSelection {
 
+     //Complexity: O(n log n), where n is the length of the collection.
 
     func kMinSelect(array: inout [Int], value: Int) -> Int { // O(n log n)
         array = array.sorted(by: >)
@@ -109,4 +110,6 @@ class KthSelection {
     //}
 
 
+https://jayeshkawli.ghost.io/implementing-quick-select-algorithm-finding-kth-largest-smallest-element/
+https://www.youtube.com/watch?v=XEmy13g1Qxc&t=99s
 }

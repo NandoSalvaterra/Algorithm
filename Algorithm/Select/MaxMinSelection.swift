@@ -9,9 +9,9 @@ import Foundation
 
 class MaxMinSelection {
 
-    /*
-     Max Select - O(N)
+    //Max Select Algorithm - O(N)
 
+    /*
      O algoritmo abaixo determina o maior valor da sequência. No caso da existência de elementos repetidos, devolve a primeira ocorrência do maior valor.
      No início assume que o maior valor é o primeiro elemento da sequência e depois esta é analisada até ao último elemento à procura de um valor ainda maior.
      */

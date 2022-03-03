@@ -2,17 +2,13 @@
 
 ## Introdução
 
-A pesquisa de informação é uma tarefa trivial em programação, mas depende muito da forma como a informação está organizada. 
-
-Quanto mais ordenada estiver a informação, mais eficiente poderá ser o método de pesquisa. Pesquisar uma sequência à procura da
-localização de um determinado valor é uma tarefa muito frequente e simples. Por vezes, a pesquisa de informação transforma-se na busca de informação com uma determinada característica particular, como, por exemplo, procurar o maior ou o menor valor de uma
-sequência. A seleção de informação é, portanto, um caso particular da pesquisa. Selecionar consiste em pesquisar informação com características específicas e/ou relevantes.
+A pesquisa de informação é uma tarefa trivial em programação, mas depende muito da forma como a informação está organizada. Quanto mais ordenada estiver a informação, mais eficiente poderá ser o método de pesquisa. Pesquisar uma sequência à procura da localização de um determinado valor é uma tarefa muito frequente e simples. Por vezes, a pesquisa de informação transforma-se na busca de informação com uma determinada característica particular, como, por exemplo, procurar o maior ou o menor valor de uma sequência. A seleção de informação é, portanto, um caso particular da pesquisa. Selecionar consiste em pesquisar informação com características específicas e/ou relevantes.
 
 Mas, a pesquisa e a seleção são computacionalmente dispendiosas, porque a sequência pode ser constituida por centenas ou mesmo milhares de elementos, pelo que exige o desenvolvimento de algoritmos eficientes. A operação básica dos algoritmos de pesquisa e de seleção é a operação de comparação de elementos e a dimensão de entrada do problema é o número de elementos da sequência.
 
 ## Algoritmos de Pesquisa
 
-A maneira mais simples de de pesquisar uma sequência é a pesquisa sequencial (`Sequencial Search`), também chamada de pesquisa linear. Ele aplica a estratégia de pesquisa exaustiva, também conhecida como força bruta (`Brutal Force`) que consiste em analisar todos os elementos da sequência de maneira metódica. A pesquisa começa no elemento inicial da sequência e avança, elemento a elemento até encontrar o valor procurado ou até esgotar a sequência.
+A maneira mais simples de de pesquisar uma sequência é a pesquisa sequencial (`Sequencial Search`), também chamada de pesquisa linear. Ele aplica a estratégia de pesquisa exaustiva, também conhecida como força bruta (`Brute Force`) que consiste em analisar todos os elementos da sequência de maneira metódica. A pesquisa começa no elemento inicial da sequência e avança, elemento a elemento até encontrar o valor procurado ou até esgotar a sequência.
 
 Este método de pesquisa é normalmente demorado, é dependente do tamanho da sequência mas não depende da ordem interna dos elementos da sequência. Aliás, quando uma sequência está desordenada, este é o único método de pesquisa que podemos utilizar. Independentemente da forma como a informação está armazenada na sequência, o valor procurado será encontrado, caso exista na sequência.
 

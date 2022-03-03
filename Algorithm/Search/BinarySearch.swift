@@ -81,5 +81,4 @@ class BinarySearch {
     /*
      A pesquisa binaria, independentemente da implementação ser mais ou menos eficiente, é um algoritmo de complexidade logarítmica O(log2 N), que se degrada pouco, ou mesmo nada, no caso da pesquisa sem sucesso.
      */
-
 }
