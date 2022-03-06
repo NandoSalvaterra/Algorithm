@@ -22,15 +22,25 @@ class InsertionSort {
 
     static func insertionSort(array: [Int]) -> [Int] {
         var sortedArray = array
-        for i in 1..<(sortedArray.count) {
+        for i in 1..<(sortedArray.count - 1) {
             let aux = sortedArray[i]
-            var position = i
-            while(position > 0 && sortedArray[position - 1] > aux) {
-                sortedArray[position] = sortedArray[position - 1]
-                if (position != i) { sortedArray[position] = aux }
+            var position = i - 1
+            while(position >= 0 && sortedArray[position] > aux) {
+                sortedArray[position + 1] = sortedArray[position]
                 position -= 1
             }
+            sortedArray[position + 1] = aux
         }
         return sortedArray
     }
+
+    /*
+     O algoritmo começa por considerar que o primeiro elemento da sequência já está ordenado e depois ordena os restates elementos da sequência, ou seja, desde o segundo ao último elemento. Cada elemento a ordenar é previamente copiado para uma variável temporária (aux), de forma a abrir uma posição live que permita o deslocamento dos elementos que estão atrás de si, ou seja, na parte ordenada da sequência, e que são maiores do que ele. Enquanto houver elementos na parte ordenada da sequência, maiores do que o elemento a ordenar, eles são deslocados uma posição para a frente. Quando o deslocamento dos elementos termina, o elemento a ordenar é colocado na posição que foi aberta pelo deslocamento dos elementos. Se o elemento já estiver na posição correta, porque é maior do que todos os que estão atrás de si, então não há deslocamento de elementos. Nesta situação, é feita uma instrução de cópia inutilmente. Esta ineficiência é caracteristica do Insertion Sort.
+
+     O algoritmo faz praticamente tantas comparações quantos deslocamentos. Mais concretamente, para ordenar cada elemento faz mais uma comparação do que deslocamentos, de modo a poder detetar o fim dos deslocamentos. Para uma sequência de 10 elementos o algoritmo faz um total de 31 comparações e 25 deslocamentos de elementos para ordenar a sequência.
+
+     Portanto, em termos de comparações, esse algoritmo (tendo em atenção o pior caso e o caso médio) tem complexidade quadrática O(N²), mas tem um caso médio melhor do que o Bubble Sort. Se a sequência estiver parcialmente desordenada, este é o melhor algoritmo de ordenação de todos os algoritmos simples com complexidade quadrática. No entanto, este algoritmo tem um problema; se os elementos da sequência estiverem muito longe do sítio de inserção, o seu arrastamento até ao local de inserção custa muitas operações de cópias de elementos. Existe uma implementação otimizada deste algoritmo criada em 1959 por Donald L. Shell (Shell Sort), que, em vez de comparar elementos adjacentes, compara elementos distanciados de um incremento que vai sendo, progressivamente diminuído até qua na última passagem compara elementos adjacentes. Assim a inserção de elementos distantes é feita de forma mais rápida.
+     */
 }
+
+// Falar se ele é stable ou unstable

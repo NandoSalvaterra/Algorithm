@@ -75,3 +75,5 @@ class BubbleSort {
      Contudo, è possível otimizar o algoritmo minimizando o número de comparações. Na versão normal do algoritmo, em cada passagem pela sequência, pelo menos um novo elemento fica ordenado. De facto, todos os elementos atrás do elemento onde foi feita a última troca já estão ordenados, pelo que podemos colocar a variável que representa o Reemento de parte inicial da sequência, onde termina a comparação de elementos em cada passagem ascendente, na posição seguinte à posição onde foi feita a última troca. Desta froam, evita-se fazer ainda mais comparações desnecessárias com os elementos que já estão ordenados na parte inicial da sequência.
      */
 }
+
+// Falar se ele é stable ou unstable

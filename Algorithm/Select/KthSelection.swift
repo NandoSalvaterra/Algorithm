@@ -110,6 +110,6 @@ class KthSelection {
     //}
 
 
-https://jayeshkawli.ghost.io/implementing-quick-select-algorithm-finding-kth-largest-smallest-element/
-https://www.youtube.com/watch?v=XEmy13g1Qxc&t=99s
+//https://jayeshkawli.ghost.io/implementing-quick-select-algorithm-finding-kth-largest-smallest-element/
+//https://www.youtube.com/watch?v=XEmy13g1Qxc&t=99s
 }

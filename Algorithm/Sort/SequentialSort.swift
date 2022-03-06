@@ -26,3 +26,5 @@ class SequentialSort {
         return sortedArray
     }
 }
+
+// Falar se ele é stable ou unstable

@@ -28,3 +28,5 @@ class SelectionSort {
         return sortedArray
     }
 }
+
+// Falar se ele é stable ou unstable
