@@ -9,6 +9,8 @@ import Foundation
 
 class ShellSort {
 
+    //Shell Sort Algorithm O(N²) - Unstable
+
     /*
      O algoritmo de Shell Sort foi criado por Donald Shell, que publicou sua primeira versão em 1959. É uma classificação de comparação in-place (na própria sequência) e pode ser visto como uma otimização do algoritmo Insertion Sort, que permite a troca de itens que estão distantes. O método começa classificando pares de elementos distantes um do outro, reduzindo progressivamente o intervalo entre os elementos a serem comparados. Ao começar com elementos distantes, ele pode mover alguns elementos fora do lugar para a posição mais rapidamente do que uma simples troca de vizinho mais próximo O tempo de execução do Shell Sort depende muito da sequência de intervalos que ele usa. Para muitas variantes práticas, determinar sua complexidade de tempo continua sendo um problema em aberto.
      A ideia é organizar a lista de elementos de forma que, começando em qualquer lugar, tomando cada h-ésimo elemento produza uma lista ordenada. Essa lista é dita h-ordenada (h-sorted). Também pode ser considerado como h listas intercaladas, cada uma classificada individualmente. Começar com grandes valores de h permite que os elementos se movam por longas distâncias na lista original, reduzindo grandes quantidades de desordem rapidamente e deixando menos trabalho para etapas menores de h-sort. Se a lista é então k-sorted para algum inteiro menor k, então a lista permanece h-sorted. Seguir essa ideia para uma sequência decrescente de valores h terminando em 1 é garantido para deixar uma lista ordenada no final.
@@ -82,6 +84,3 @@ static func shellSort1(array: [Int]) -> [Int] {
  */
 
 }
-
-
-// Falar se ele é stable ou unstable

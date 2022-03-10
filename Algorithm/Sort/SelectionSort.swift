@@ -9,7 +9,7 @@ import Foundation
 
 class SelectionSort {
 
-    //Selection Sort Algorithm O(N²)
+    //Selection Sort Algorithm O(N²) - Unstable
 
     /*
      Na ciência da computação, a ordenação por seleção (Selection Sort) é um algoritmo de ordenação por comparação no local (in-place comparison). Ele tem uma complexidade de tempo quadrática, o que o torna ineficiente em listas grandes e geralmente tem um desempenho pior do que a sua semelhante ordenação por inserção (Insertion Sort). A ordenação por seleção é conhecida por sua simplicidade e tem vantagens de desempenho sobre algoritmos mais complicados em certas situações, particularmente onde a memória auxiliar é limitada.
@@ -28,5 +28,3 @@ class SelectionSort {
         return sortedArray
     }
 }
-
-// Falar se ele é stable ou unstable

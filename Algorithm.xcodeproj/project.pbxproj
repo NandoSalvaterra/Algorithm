@@ -16,6 +16,8 @@
 		5B066E1F27D0244200C8AB3C /* BubbleSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B066E1E27D0244200C8AB3C /* BubbleSortTests.swift */; };
 		5B066E2127D045BB00C8AB3C /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B066E2027D045BB00C8AB3C /* InsertionSort.swift */; };
 		5B066E2327D045D200C8AB3C /* InsertionSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B066E2227D045D200C8AB3C /* InsertionSortTests.swift */; };
+		5B69A2C327DAAE4A00CF2916 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69A2C227DAAE4A00CF2916 /* HeapSort.swift */; };
+		5B69A2C527DAAE5500CF2916 /* HeapSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69A2C427DAAE5500CF2916 /* HeapSortTests.swift */; };
 		5B99D2B027D1745000E3F808 /* ShellSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99D2AF27D1745000E3F808 /* ShellSort.swift */; };
 		5B99D2B227D18E6600E3F808 /* ShellSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99D2B127D18E6600E3F808 /* ShellSortTests.swift */; };
 		5BEDCDE327C96A6C00191CEA /* AlgorithmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDCDE227C96A6C00191CEA /* AlgorithmApp.swift */; };
@@ -56,6 +58,8 @@
 		5B066E1E27D0244200C8AB3C /* BubbleSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortTests.swift; sourceTree = "<group>"; };
 		5B066E2027D045BB00C8AB3C /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		5B066E2227D045D200C8AB3C /* InsertionSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortTests.swift; sourceTree = "<group>"; };
+		5B69A2C227DAAE4A00CF2916 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
+		5B69A2C427DAAE5500CF2916 /* HeapSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSortTests.swift; sourceTree = "<group>"; };
 		5B99D2AF27D1745000E3F808 /* ShellSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellSort.swift; sourceTree = "<group>"; };
 		5B99D2B127D18E6600E3F808 /* ShellSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellSortTests.swift; sourceTree = "<group>"; };
 		5BEDCDDF27C96A6C00191CEA /* Algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,7 @@
 				5B066E1C27CFD3A200C8AB3C /* BubbleSort.swift */,
 				5B066E2027D045BB00C8AB3C /* InsertionSort.swift */,
 				5B99D2AF27D1745000E3F808 /* ShellSort.swift */,
+				5B69A2C227DAAE4A00CF2916 /* HeapSort.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 				5B066E1E27D0244200C8AB3C /* BubbleSortTests.swift */,
 				5B066E2227D045D200C8AB3C /* InsertionSortTests.swift */,
 				5B99D2B127D18E6600E3F808 /* ShellSortTests.swift */,
+				5B69A2C427DAAE5500CF2916 /* HeapSortTests.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 				5B99D2B027D1745000E3F808 /* ShellSort.swift in Sources */,
 				5BF5898527C9C8AC0059625C /* KthSelection.swift in Sources */,
 				5B066E1D27CFD3A200C8AB3C /* BubbleSort.swift in Sources */,
+				5B69A2C327DAAE4A00CF2916 /* HeapSort.swift in Sources */,
 				5B066E2127D045BB00C8AB3C /* InsertionSort.swift in Sources */,
 				5B066E1927CFB19C00C8AB3C /* SelectionSort.swift in Sources */,
 				5BEDCE0F27C98F0900191CEA /* SequentialSearch.swift in Sources */,
@@ -350,6 +357,7 @@
 				5B066E1227CDBD4D00C8AB3C /* SequentialSortTests.swift in Sources */,
 				5BF5898927C9CF4F0059625C /* KthSelectionTests.swift in Sources */,
 				5B066E1F27D0244200C8AB3C /* BubbleSortTests.swift in Sources */,
+				5B69A2C527DAAE5500CF2916 /* HeapSortTests.swift in Sources */,
 				5B066E2327D045D200C8AB3C /* InsertionSortTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
