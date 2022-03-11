@@ -1,0 +1,1 @@
+# Sequential Sort - Ordenação Sequencial

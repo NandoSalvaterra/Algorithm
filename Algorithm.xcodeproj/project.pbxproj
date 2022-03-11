@@ -18,6 +18,9 @@
 		5B066E2327D045D200C8AB3C /* InsertionSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B066E2227D045D200C8AB3C /* InsertionSortTests.swift */; };
 		5B69A2C327DAAE4A00CF2916 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69A2C227DAAE4A00CF2916 /* HeapSort.swift */; };
 		5B69A2C527DAAE5500CF2916 /* HeapSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69A2C427DAAE5500CF2916 /* HeapSortTests.swift */; };
+		5B69A2C727DB880600CF2916 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69A2C627DB880600CF2916 /* MergeSort.swift */; };
+		5B69A2C927DB881700CF2916 /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69A2C827DB881700CF2916 /* MergeSortTests.swift */; };
+		5B69A2CC27DBC96500CF2916 /* SequentialSort.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B69A2CB27DBC96500CF2916 /* SequentialSort.md */; };
 		5B99D2B027D1745000E3F808 /* ShellSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99D2AF27D1745000E3F808 /* ShellSort.swift */; };
 		5B99D2B227D18E6600E3F808 /* ShellSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99D2B127D18E6600E3F808 /* ShellSortTests.swift */; };
 		5BEDCDE327C96A6C00191CEA /* AlgorithmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDCDE227C96A6C00191CEA /* AlgorithmApp.swift */; };
@@ -60,6 +63,9 @@
 		5B066E2227D045D200C8AB3C /* InsertionSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortTests.swift; sourceTree = "<group>"; };
 		5B69A2C227DAAE4A00CF2916 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		5B69A2C427DAAE5500CF2916 /* HeapSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSortTests.swift; sourceTree = "<group>"; };
+		5B69A2C627DB880600CF2916 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		5B69A2C827DB881700CF2916 /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
+		5B69A2CB27DBC96500CF2916 /* SequentialSort.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SequentialSort.md; sourceTree = "<group>"; };
 		5B99D2AF27D1745000E3F808 /* ShellSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellSort.swift; sourceTree = "<group>"; };
 		5B99D2B127D18E6600E3F808 /* ShellSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellSortTests.swift; sourceTree = "<group>"; };
 		5BEDCDDF27C96A6C00191CEA /* Algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,12 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				5B066E0C27CD8A7000C8AB3C /* SortingAlgorithms.md */,
-				5B066E0F27CDBD2800C8AB3C /* SequentialSort.swift */,
-				5B066E1827CFB19C00C8AB3C /* SelectionSort.swift */,
-				5B066E1C27CFD3A200C8AB3C /* BubbleSort.swift */,
-				5B066E2027D045BB00C8AB3C /* InsertionSort.swift */,
-				5B99D2AF27D1745000E3F808 /* ShellSort.swift */,
-				5B69A2C227DAAE4A00CF2916 /* HeapSort.swift */,
+				5B69A2CA27DBA9BE00CF2916 /* SequentialSort */,
+				5B69A2CD27DBC97200CF2916 /* SelectionSort */,
+				5B69A2CE27DBC97D00CF2916 /* BubbleSort */,
+				5B69A2CF27DBCC2B00CF2916 /* InsertionSort */,
+				5B69A2D027DBCC3A00CF2916 /* ShellSort */,
+				5B69A2D127DBCC4400CF2916 /* HeapSort */,
+				5B69A2D227DBCC5400CF2916 /* MergeSort */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -123,8 +130,82 @@
 				5B066E2227D045D200C8AB3C /* InsertionSortTests.swift */,
 				5B99D2B127D18E6600E3F808 /* ShellSortTests.swift */,
 				5B69A2C427DAAE5500CF2916 /* HeapSortTests.swift */,
+				5B69A2C827DB881700CF2916 /* MergeSortTests.swift */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		5B69A2CA27DBA9BE00CF2916 /* SequentialSort */ = {
+			isa = PBXGroup;
+			children = (
+				5B69A2CB27DBC96500CF2916 /* SequentialSort.md */,
+				5B066E0F27CDBD2800C8AB3C /* SequentialSort.swift */,
+			);
+			path = SequentialSort;
+			sourceTree = "<group>";
+		};
+		5B69A2CD27DBC97200CF2916 /* SelectionSort */ = {
+			isa = PBXGroup;
+			children = (
+				5B066E1827CFB19C00C8AB3C /* SelectionSort.swift */,
+			);
+			path = SelectionSort;
+			sourceTree = "<group>";
+		};
+		5B69A2CE27DBC97D00CF2916 /* BubbleSort */ = {
+			isa = PBXGroup;
+			children = (
+				5B066E1C27CFD3A200C8AB3C /* BubbleSort.swift */,
+			);
+			path = BubbleSort;
+			sourceTree = "<group>";
+		};
+		5B69A2CF27DBCC2B00CF2916 /* InsertionSort */ = {
+			isa = PBXGroup;
+			children = (
+				5B066E2027D045BB00C8AB3C /* InsertionSort.swift */,
+			);
+			path = InsertionSort;
+			sourceTree = "<group>";
+		};
+		5B69A2D027DBCC3A00CF2916 /* ShellSort */ = {
+			isa = PBXGroup;
+			children = (
+				5B99D2AF27D1745000E3F808 /* ShellSort.swift */,
+			);
+			path = ShellSort;
+			sourceTree = "<group>";
+		};
+		5B69A2D127DBCC4400CF2916 /* HeapSort */ = {
+			isa = PBXGroup;
+			children = (
+				5B69A2C227DAAE4A00CF2916 /* HeapSort.swift */,
+			);
+			path = HeapSort;
+			sourceTree = "<group>";
+		};
+		5B69A2D227DBCC5400CF2916 /* MergeSort */ = {
+			isa = PBXGroup;
+			children = (
+				5B69A2C627DB880600CF2916 /* MergeSort.swift */,
+			);
+			path = MergeSort;
+			sourceTree = "<group>";
+		};
+		5B69A2D327DBCDD300CF2916 /* MaxMinSelection */ = {
+			isa = PBXGroup;
+			children = (
+				5BEDCE1527C99B1B00191CEA /* MaxMinSelection.swift */,
+			);
+			path = MaxMinSelection;
+			sourceTree = "<group>";
+		};
+		5B69A2D427DBCDDB00CF2916 /* KthSelection */ = {
+			isa = PBXGroup;
+			children = (
+				5BF5898427C9C8AC0059625C /* KthSelection.swift */,
+			);
+			path = KthSelection;
 			sourceTree = "<group>";
 		};
 		5BEDCDD627C96A6B00191CEA = {
@@ -152,8 +233,8 @@
 				5BEDCE0C27C96AE800191CEA /* Search */,
 				5BEDCE0D27C96AEE00191CEA /* Select */,
 				5B066E0927CD55B800C8AB3C /* Sort */,
-				5BEDCDE227C96A6C00191CEA /* AlgorithmApp.swift */,
 				5BEDCDE427C96A6C00191CEA /* ContentView.swift */,
+				5BEDCDE227C96A6C00191CEA /* AlgorithmApp.swift */,
 				5BEDCDE627C96A6D00191CEA /* Assets.xcassets */,
 				5BEDCDE827C96A6D00191CEA /* Preview Content */,
 			);
@@ -193,8 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				5BEDCE1927C99BC000191CEA /* SelectionAlgorithms.md */,
-				5BEDCE1527C99B1B00191CEA /* MaxMinSelection.swift */,
-				5BF5898427C9C8AC0059625C /* KthSelection.swift */,
+				5B69A2D327DBCDD300CF2916 /* MaxMinSelection */,
+				5B69A2D427DBCDDB00CF2916 /* KthSelection */,
 			);
 			path = Select;
 			sourceTree = "<group>";
@@ -309,6 +390,7 @@
 				5BEDCE1827C99B9A00191CEA /* SearchAlgorithms.md in Resources */,
 				5BEDCDEA27C96A6D00191CEA /* Preview Assets.xcassets in Resources */,
 				5B066E0D27CD8A7000C8AB3C /* SortingAlgorithms.md in Resources */,
+				5B69A2CC27DBC96500CF2916 /* SequentialSort.md in Resources */,
 				5BEDCE1A27C99BC000191CEA /* SelectionAlgorithms.md in Resources */,
 				5BEDCDE727C96A6D00191CEA /* Assets.xcassets in Resources */,
 			);
@@ -332,6 +414,7 @@
 				5BEDCE1127C98F4A00191CEA /* BinarySearch.swift in Sources */,
 				5B066E1027CDBD2800C8AB3C /* SequentialSort.swift in Sources */,
 				5BEDCDE527C96A6C00191CEA /* ContentView.swift in Sources */,
+				5B69A2C727DB880600CF2916 /* MergeSort.swift in Sources */,
 				5BEDCDE327C96A6C00191CEA /* AlgorithmApp.swift in Sources */,
 				5BEDCE1627C99B1B00191CEA /* MaxMinSelection.swift in Sources */,
 				5B99D2B027D1745000E3F808 /* ShellSort.swift in Sources */,
@@ -354,6 +437,7 @@
 				5BEDCE1E27C9A67E00191CEA /* BinarySearchTests.swift in Sources */,
 				5BF5898127C9AF3D0059625C /* TernarySearchTests.swift in Sources */,
 				5BEDCE1C27C99CA300191CEA /* SequentialSearchTests.swift in Sources */,
+				5B69A2C927DB881700CF2916 /* MergeSortTests.swift in Sources */,
 				5B066E1227CDBD4D00C8AB3C /* SequentialSortTests.swift in Sources */,
 				5BF5898927C9CF4F0059625C /* KthSelectionTests.swift in Sources */,
 				5B066E1F27D0244200C8AB3C /* BubbleSortTests.swift in Sources */,
