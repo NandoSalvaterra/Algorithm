@@ -15,5 +15,4 @@ class MergeSortTests: XCTestCase {
         let orderedList = [1, 5, 6, 7, 9, 12, 14, 17, 21, 25, 43, 44, 64, 85, 86, 88]
         XCTAssertEqual(MergeSort.mergeSort(array: disorderedList), orderedList)
     }
-
 }

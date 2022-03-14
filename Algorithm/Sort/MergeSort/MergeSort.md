@@ -1,10 +1,12 @@
 # Merge Sort - Ordenação Merge
 
-**Best Time Complexity:** `O(N log N)`
+**Best Time Complexity:** `O(n log n)`
 
-**Average Time Complexity:** `O(N log N)`
+**Average Time Complexity:** `O(n log n)`
 
-**Worst Time Complexity:** `O(N log N)`
+**Worst Time Complexity:** `O(n log n)`
+
+**Space Complexity:** `O(n)`
 
 **Stability:** `Stable` <br/> <br/>
 
@@ -82,11 +84,18 @@ func merge(left: [Int], right: [Int]) -> [Int] {
 }
 ```
 
-O método de `merge` é um processo bastante eficiente com complexidade linear `O(n)`. No melhor caso, quando a sequência está ordenada por ordem crescente, os elementos da segunda metade da sequência são maiores do que os elementos da primeira metade da sequência, pelo que faz apenas **N/2** comparações para fazer a fusão. No pior caso, quando as duas metades da sequência têm elementos alternados em valor, faz **N/2+N/2-1 = N-1** comparações para fazer a fusão intercalada dos elementos.
+<br/> 
 
+O início da função começa por declarar os índices de controle das sequências da direita e da esquerda, sempre que for encontrado um valor em uma dessas sequências, ele é adicionado na lista auxiliar e o seu índice é incrementado para não olharmos mais para aquele elemento.
+O primeiro laço de repetição `while` garante que todos os elementos das duas sequências sejam comparados e adicionados no sequência auxiliar **se e somente se** ambos os índices forem validos e não estourarem um erro do tipo `Out of Bounds`. Quando esse laço termina, podem existir elementos restantes em quaisquer das duas sequências, e para essa situação existe os dois últimos laços `while`. Nesse momento podemos garantir que todos os elementos já estão pré ordenados (afinal estamos dentro de uma função merge de sequências já ordenadas) e podemos seguramente adicioná-los ao final da sequência auxiliar.
 
+O processo de merge é sempre feito de baixo para cima, ou seja, de todas as sequências que contém um único elemento até que se consiga toda a sequência unida novamente, como ilustrado na imagem abaixo. Com a recursividade, os últimos niveis de recursão (aqueles com as listas de um único elemento) vão sendo ordenadas e retornandos para os níveis de cima que termina por odenar a lista da primeira recursão, que equivale a toda sequência. <br/> <br/>
 
 <img src="https://i.imgur.com/J9MFOeV.png" alt="drawing" width="800"/>
+
+<br/>
+
+O método de `merge` desse algoritmo é um processo bastante eficiente com complexidade linear `O(n)`. No melhor caso, quando a sequência está ordenada por ordem crescente, os elementos da segunda metade da sequência são maiores do que os elementos da primeira metade da sequência, pelo que faz apenas **N/2** comparações para fazer a fusão. No pior caso, quando as duas metades da sequência têm elementos alternados em valor, faz **N/2+N/2-1 = N-1** comparações para fazer a fusão intercalada dos elementos.
 
 
 O Merge Sort tem complexidade linear-logarítmica, mas necessita de memória auxiliar (uma sequência com a mesma dimensão da sequência original) para executar o processo de `merge`, tendo por isso complexidade de espaço **linear** `O(n)`. Esta necessidade de memória extra desfavorece-o em relação aos outros algoritmos de igual complexidade, como são os casos do `Heap Sort` e do `Quick Sort`.
