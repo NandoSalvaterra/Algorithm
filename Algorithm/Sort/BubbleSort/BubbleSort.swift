@@ -9,8 +9,6 @@ import Foundation
 
 class BubbleSort {
 
-    //Bubble Sort Algorithm O(N²) - Stable
-
     /*
      Na ciência da computação, o Bubble Sort, ou ordenação por flutuação (literalmente "por bolha"), é um algoritmo de ordenação dos mais simples. A ideia é percorrer a sequência diversas vezes, e a cada passagem fazer flutuar para o topo o maior elemento da sequência. Essa movimentação lembra a forma como as bolhas em um tanque de água procuram seu próprio nível, e disso vem o nome do algoritmo. No melhor caso, o algoritmo executa N operações relevantes, onde N representa o número de elementos da sequência. No pior caso, são feitas N² operações. A complexidade desse algoritmo é de ordem quadrática. Por isso, ele não é recomendado para programas que precisem de velocidade e operem com quantidade elevada de dados.
 
